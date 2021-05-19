@@ -32,13 +32,26 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application._Function">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="imperative.Main" />
       <module name="JavaFunctionalProgramming" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="imperative.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_Function" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="functionalInterface._Function" />
+      <module name="JavaFunctionalProgramming" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="functionalInterface.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -59,6 +72,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application._Function" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -71,7 +85,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1621419579091</updated>
-      <workItem from="1621419581431" duration="1908000" />
+      <workItem from="1621419581431" duration="2851000" />
     </task>
     <servers />
   </component>
