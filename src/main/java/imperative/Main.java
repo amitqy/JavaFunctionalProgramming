@@ -1,8 +1,10 @@
 package imperative;
 
+import java.awt.*;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
 public class Main {
@@ -25,9 +27,13 @@ public class Main {
 
         System.out.println(Arrays.toString(females.toArray()));
 
+
+        // accepts a person and returned a boolean value based on some condition
+        Predicate <Person> predicate = person -> Gender.FEMALE.equals(person.gender);
+
         System.out.println("-----------------------------------------------------------");
         // declarative approach - we simply tell what to do
-        List<Person> females2 = people.stream().filter(person -> Gender.FEMALE.equals(person.gender))
+        List<Person> females2 = people.stream().filter(predicate)
                 .collect(Collectors.toList());
 
         System.out.println(Arrays.toString(females2.toArray()));
