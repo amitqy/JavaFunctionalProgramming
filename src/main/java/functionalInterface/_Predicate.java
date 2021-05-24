@@ -43,13 +43,13 @@ public class _Predicate {
         return (phoneNumber.startsWith("07")) && (phoneNumber.length() == 11);
     }
 
-    // takes an input and returns boolean
+    // Predicates takes an input and returns boolean
     // Predicate<Input Type>
     static Predicate<String> isPhoneNumberValidPredicate = phoneNumber -> (phoneNumber.startsWith("07")) && (phoneNumber.length() == 11);
 
     static Predicate<String> containNumber3 = phoneNumber->(phoneNumber.contains("3"));
 
-    // takes two inputs and return boolean
+    // BiPredicates takes two inputs and return boolean
     // BiPredicate<Input Type1 ,Input Type2 >
     static BiPredicate<String ,String > areStringsEqual = (string1,string2) -> string1.equals(string2);
 }
